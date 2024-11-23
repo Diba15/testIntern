@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Soal 2</title>
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+<nav class="nav">
+    <h1>Intern Test</h1>
+    <div class="linkContainer">
+        <a href="../index.html">Soal 1</a>
+        <a href="index.html" class="active">Soal 2</a>
+        <a href="../Soal3/index.html">Soal 3</a>
+    </div>
+</nav>
+<div class="container">
+    <h1>Dense Ranking</h1>
+    <form action="" id="form" onsubmit="submitDense()">
+        <h2>Sampel Input: </h2>
+        <h5>7</h5>
+        <h5>100 100 50 40 40 20 10</h5>
+        <h5>4</h5>
+        <h5>5 25 50 120</h5>
+        <label for="player">Number of Players Participating: </label><input type="number" id="player">
+        <label for="playerScore">Score List (separated by space): </label><input type="text" id="playerScore">
+        <label for="gitsPlayer">Number of Games Participated in by GITS: </label><input type="number" id="gitsPlayer">
+        <label for="gitsScore">Score List (separated by space): </label><input type="text" id="gitsScore">
+        <button id="button">Click for Result</button>
+    </form>
+    <p id="result"></p>
+</div>
+
+<script src="soal2.js"></script>
+</body>
+</html>

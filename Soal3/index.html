@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Soal 3</title>
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+<nav class="nav">
+    <h1>Intern Test</h1>
+    <div class="linkContainer">
+        <a href="../index.html">Soal 1</a>
+        <a href="../Soal2/index.html">Soal 2</a>
+        <a href="index.html" class="active">Soal 3</a>
+    </div>
+</nav>
+<div class="container">
+    <h1>Balance Brackets</h1>
+    <form onsubmit="formSubmit()" id="form">
+        <h3>Sample 1</h3>
+        <h6>
+            Input: {[()]}<br>
+            Output: YES <br>
+            Penjelasan: Setiap bracket seimbang, antara bracket buka dan bracket tutup. <br>
+            opening : { } <br>
+            opening : [ ] <br>
+            opening : ( )
+        </h6>
+        <h3>Sample 2</h3>
+        <h6>
+            Input: {[(])}<br>
+            Output: NO <br>
+            Penjelasan: String { [ ( ] ) } tidak seimbang untuk karakter yang diapit oleh { dan } yaitu [ ( ] ).
+        </h6>
+        <h3>Sample 3</h3>
+        <h6>
+            Input: {(([])[])[]}<br>
+            Output: YES <br>
+            Penjelasan: Setiap bracket seimbang, antara bracket buka dan bracket tutup, meskipun struktur bracket tidak
+            beraturan.
+        </h6>
+        <label for="bracketInput">Input: </label><input type="text" id="bracketInput">
+        <button id="button">Submit</button>
+    </form>
+    <p id="text"></p>
+</div>
+
+<script src="soal3.js"></script>
+</body>
+</html>
